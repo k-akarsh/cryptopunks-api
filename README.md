@@ -7,6 +7,21 @@ The app is built in Ruby on Rails and uses Postgres database to store informatio
 
 The app consists of an import script which can be executed on demand to fetch the latest sales listings from the Ethereum blockchain. The import script can be executed as a background job or a scheduler as well. However, subscribing to events in the smart contracts will be a good solution to remove the delay and it needs to be implemented next.
 
+## Demo
+
+A demo of the app can be found hosted on Heroku: https://cryptopunks-api.herokuapp.com
+
+#### CryptoPunks Sales Listings:
+URL: <https://cryptopunks-api.herokuapp.com/api/v1/punks/listings>
+
+This end point returns all cryptopunks which are listed for sale.
+
+#### CryptoPunk Information:
+Example URL: <https://cryptopunks-api.herokuapp.com/api/v1/punks/2969>
+
+This end point returns the for-sale price and information about the cryptopunk with numeric identifier 2969.
+
+
 ## Dependencies:
 The project uses **Ruby 2.5.3**, **Rails 5.2.3** and **Postgres 11.4**.
 
