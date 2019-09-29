@@ -1,0 +1,2 @@
+class PunkListing < ApplicationRecord
+end
